@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hanseo Ju — Engineering &amp; Photography Portfolio</title>
+<meta name="description" content="기계공학 프로젝트와 거리 사진을 기록하는 개인 포트폴리오.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="주한서 — Engineering &amp; Photography Portfolio">
+<meta property="og:description" content="기계공학 프로젝트와 거리 사진을 기록하는 개인 포트폴리오.">
+<meta property="og:image" content="og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="주한서 — Engineering &amp; Photography Portfolio">
+<meta name="twitter:description" content="기계공학 프로젝트와 거리 사진을 기록하는 개인 포트폴리오.">
+<meta name="twitter:image" content="og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">HS<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="home" class="active">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="photography.html" data-page="photography">Photography</a>
+      <a href="about.html" data-page="about">About</a>
+    </nav>
+    <button class="nav-toggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow reveal">Mechanical Engineering &middot; Visual Documentation</p>
+      <h1 class="hero-title reveal">
+        만들고, 설계하고,<br>
+        <span class="type-wrap"><span data-typing='["기록합니다.", "촬영합니다.", "다듬습니다."]'>기록합니다.</span><span class="cursor">&nbsp;</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        기계공학을 전공하는 학생으로서 CAD 설계와 프로토타입 제작 과정을,
+        그리고 일상 속 거리의 순간들을 사진으로 남기는 공간입니다.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="projects.html" class="btn btn-primary">프로젝트 보기 →</a>
+        <a href="photography.html" class="btn btn-ghost">사진 갤러리</a>
+      </div>
+      <div class="hero-meta reveal">
+        <div><strong>2025 —</strong>기계공학 전공 1년차</div>
+        <div><strong>06+</strong>진행한 프로젝트</div>
+        <div><strong>120+</strong>촬영한 사진</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal" style="margin-bottom:10px;">Selected Work</p>
+          <h2 class="section-title reveal">하이라이트 프로젝트</h2>
+        </div>
+        <p class="section-desc reveal">설계부터 프로토타입까지, 최근 진행한 공학 프로젝트 두 가지를 소개합니다.</p>
+      </div>
+
+      <div class="featured-grid reveal-group">
+        <article class="project-card reveal">
+          <div class="project-thumb ph">
+            <div class="ph-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+            </div>
+            <span class="ph-tag">CAD PREVIEW</span>
+            <div class="dim-overlay" aria-hidden="true">
+              <svg viewBox="0 0 400 220"><path class="dim-line" d="M20 40 H 200 M20 40 V 30 M200 40 V 30 M20 180 H 380 M20 180 V 190 M380 180 V 190"/></svg>
+              <span class="dim-label tl">65mm</span>
+              <span class="dim-label br">Ø12mm</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Mechanical Design</span>
+            <h3>소형 로봇 그리퍼 설계</h3>
+            <p>3D 프린팅 기반 2축 그리퍼 메커니즘을 설계하고 시제품을 제작한 프로젝트입니다.</p>
+            <div class="project-tags"><span>Fusion 360</span><span>3D Printing</span><span>Mechanism</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb ph">
+            <div class="ph-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 9h18M8 4v14"/></svg>
+            </div>
+            <span class="ph-tag">CAD PREVIEW</span>
+            <div class="dim-overlay" aria-hidden="true">
+              <svg viewBox="0 0 400 220"><path class="dim-line" d="M20 40 H 200 M20 40 V 30 M200 40 V 30 M20 180 H 380 M20 180 V 190 M380 180 V 190"/></svg>
+              <span class="dim-label tl">120mm</span>
+              <span class="dim-label br">t=3mm</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Prototyping</span>
+            <h3>모듈형 드론 프레임</h3>
+            <p>충격 흡수를 고려한 경량 드론 프레임을 설계하고 강도 테스트를 진행했습니다.</p>
+            <div class="project-tags"><span>SolidWorks</span><span>FEA</span><span>Carbon Fiber</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHOTO STRIP ================= -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow reveal" style="margin-bottom:10px;">Photography</p>
+          <h2 class="section-title reveal">최근 촬영한 사진</h2>
+        </div>
+        <a href="photography.html" class="btn btn-ghost reveal">전체 갤러리 →</a>
+      </div>
+
+      <div class="photo-strip reveal-group">
+        <div class="photo-card reveal">
+          <div class="ph">
+            <div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+          </div>
+          <div class="hud">
+            <span class="hud-rec"><span class="dot"></span>REC</span>
+            <div class="hud-corner tl"></div><div class="hud-corner tr"></div>
+            <div class="hud-corner bl"></div><div class="hud-corner br"></div>
+            <div class="hud-crosshair"></div>
+            <div class="hud-meta">35mm · f/1.8 · 1/500s · ISO 100</div>
+          </div>
+        </div>
+        <div class="photo-card reveal">
+          <div class="ph ph-cream">
+            <div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+          </div>
+          <div class="hud">
+            <span class="hud-rec"><span class="dot"></span>REC</span>
+            <div class="hud-corner tl"></div><div class="hud-corner tr"></div>
+            <div class="hud-corner bl"></div><div class="hud-corner br"></div>
+            <div class="hud-crosshair"></div>
+            <div class="hud-meta">50mm · f/2.0 · 1/250s · ISO 200</div>
+          </div>
+        </div>
+        <div class="photo-card reveal">
+          <div class="ph">
+            <div class="ph-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+          </div>
+          <div class="hud">
+            <span class="hud-rec"><span class="dot"></span>REC</span>
+            <div class="hud-corner tl"></div><div class="hud-corner tr"></div>
+            <div class="hud-corner bl"></div><div class="hud-corner br"></div>
+            <div class="hud-crosshair"></div>
+            <div class="hud-meta">28mm · f/4.0 · 1/1000s · ISO 100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT TEASER ================= -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="teaser reveal">
+        <div>
+          <p class="eyebrow" style="margin-bottom:10px;">About Me</p>
+          <h2>기록하는 이유,<br>만드는 과정</h2>
+          <p>
+            기계공학을 전공하며 배운 것들을 단순히 흘려보내지 않고, 설계 과정과
+            결과물을 이 곳에 아카이빙하고 있습니다. 사진은 관찰하는 눈을
+            훈련하는 또 다른 방식입니다.
+          </p>
+          <a href="about.html" class="btn btn-primary">더 알아보기 →</a>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card"><div class="num">6+</div><div class="label">완료한 프로젝트</div></div>
+          <div class="stat-card"><div class="num">120+</div><div class="label">촬영한 사진</div></div>
+          <div class="stat-card"><div class="num">3</div><div class="label">사용 CAD 툴</div></div>
+          <div class="stat-card"><div class="num">1<span class="mono">yr</span></div><div class="label">기록 중인 기간</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>함께 이야기 나눠요</h2>
+        <p>프로젝트 협업이나 궁금한 점이 있다면 언제든 연락 주세요.</p>
+        <div class="cta-links">
+          <a href="about.html#contact" class="btn btn-primary">Contact Me →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Hanseo Ju. Built with HTML, CSS &amp; JS.</p>
+    <div class="footer-links">
+      <a href="mailto:juhanseo0903@gmail.com">Email</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
