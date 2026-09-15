@@ -1,0 +1,11 @@
+name = "hs-portfolio-oauth-proxy"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Secret (set via `wrangler secret put`, not stored here):
+#   GITHUB_CLIENT_SECRET
+#
+# Vars (not secret, safe to keep in this file):
+[vars]
+ALLOWED_ORIGIN = "https://gulgok12.github.io"
+GITHUB_CLIENT_ID = "Ov23lieSe7pnI4TPDCbg"

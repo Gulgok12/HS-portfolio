@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Gulgok12/HS-portfolio
+  branch: main
+  base_url: https://hs-portfolio-oauth-proxy.gulgok12.workers.dev
+  auth_endpoint: auth
+
+media_folder: images
+public_folder: /HS-portfolio/images
+
+# 로그인 테스트용 최소 컬렉션 — 저장 버튼을 누르기 전까지는 저장소에 아무것도 쓰지 않음
+collections:
+  - name: notes
+    label: Test Notes
+    folder: content/notes
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
