@@ -1,0 +1,100 @@
+{
+  "photos": [
+    {
+      "image": "images/hangang-river.jpg",
+      "alt": "한강 노을과 보트",
+      "date": "2026.09.14",
+      "category": "daily",
+      "shape": "tall",
+      "home": true,
+      "focal": "25.6mm",
+      "aperture": "f/8",
+      "shutter": "1/1600s",
+      "iso": "100"
+    },
+    {
+      "image": "images/yeouido-skyline.jpg",
+      "alt": "여의도 파크원 스카이라인",
+      "date": "2026.09.14",
+      "category": "street",
+      "shape": "wide",
+      "home": true,
+      "focal": "25.6mm",
+      "aperture": "f/4.5",
+      "shutter": "1/1000s",
+      "iso": "100"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "daily",
+      "shape": "square",
+      "home": true,
+      "focal": "50mm",
+      "aperture": "f/2.0",
+      "shutter": "1/250s",
+      "iso": "200"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "street",
+      "shape": "tall",
+      "home": false,
+      "focal": "85mm",
+      "aperture": "f/1.4",
+      "shutter": "1/1000s",
+      "iso": "100"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "daily",
+      "shape": "square",
+      "home": false,
+      "focal": "35mm",
+      "aperture": "f/2.2",
+      "shutter": "1/320s",
+      "iso": "160"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "night",
+      "shape": "tall",
+      "home": false,
+      "focal": "28mm",
+      "aperture": "f/2.0",
+      "shutter": "1/125s",
+      "iso": "640"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "street",
+      "shape": "wide",
+      "home": false,
+      "focal": "50mm",
+      "aperture": "f/1.8",
+      "shutter": "1/500s",
+      "iso": "100"
+    },
+    {
+      "image": "",
+      "alt": "",
+      "date": "",
+      "category": "daily",
+      "shape": "square",
+      "home": false,
+      "focal": "35mm",
+      "aperture": "f/2.5",
+      "shutter": "1/400s",
+      "iso": "200"
+    }
+  ]
+}

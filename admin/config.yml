@@ -5,15 +5,240 @@ backend:
   base_url: https://hs-portfolio-oauth-proxy.gulgok12.workers.dev
   auth_endpoint: auth
 
+locale: ko
+
 media_folder: images
 public_folder: /HS-portfolio/images
 
-# 로그인 테스트용 최소 컬렉션 — 저장 버튼을 누르기 전까지는 저장소에 아무것도 쓰지 않음
 collections:
-  - name: notes
-    label: Test Notes
-    folder: content/notes
-    create: true
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Body, name: body, widget: markdown }
+  # ---------------- 프로젝트 ----------------
+  - name: projects
+    label: 프로젝트
+    editor:
+      preview: false
+    files:
+      - name: projects
+        label: 프로젝트 목록
+        file: data/projects.json
+        fields:
+          - label: 프로젝트
+            name: projects
+            widget: list
+            label_singular: 프로젝트
+            summary: "{{fields.title}}"
+            collapsed: true
+            fields:
+              - label: 주소용 ID
+                name: id
+                widget: string
+                hint: "영문 소문자와 하이픈만 써주세요 (예: robot-gripper). 상세 페이지 주소에 쓰여서 다른 프로젝트와 겹치면 안 돼요."
+              - label: 제목
+                name: title
+                widget: string
+              - label: 카테고리
+                name: category
+                widget: select
+                default: design
+                options:
+                  - { label: "Design", value: design }
+                  - { label: "Prototype", value: prototype }
+                  - { label: "Analysis", value: analysis }
+                  - { label: "Ongoing", value: ongoing }
+              - label: 한 줄 요약 (카드에 표시)
+                name: summary
+                widget: text
+              - label: 태그
+                name: tags
+                widget: list
+                required: false
+                hint: "쉼표로 구분해서 입력 (예: Fusion 360, 3D Printing)"
+              - label: 홈 화면 하이라이트에 표시
+                name: featured
+                widget: boolean
+                default: false
+                required: false
+                hint: "체크된 프로젝트 중 위에서부터 2개가 홈 화면에 나와요"
+              - label: 썸네일 이미지
+                name: thumbnail
+                widget: image
+                required: false
+                hint: "비워두면 아래 아이콘으로 된 플레이스홀더가 보여요"
+              - label: 썸네일 없을 때 아이콘
+                name: icon
+                widget: select
+                default: gear
+                required: false
+                options:
+                  - { label: "기어", value: gear }
+                  - { label: "프레임", value: frame }
+                  - { label: "그래프", value: chart }
+                  - { label: "원형", value: clock }
+                  - { label: "제작물", value: house }
+                  - { label: "진행 중(+)", value: plus }
+              - label: 썸네일 라벨
+                name: thumbTag
+                widget: string
+                required: false
+                hint: "썸네일 오른쪽 아래 작은 글씨 (예: CAD PREVIEW)"
+              - label: 치수 라벨 1 (마우스 올리면 왼쪽 위)
+                name: dimA
+                widget: string
+                required: false
+              - label: 치수 라벨 2 (마우스 올리면 오른쪽 아래)
+                name: dimB
+                widget: string
+                required: false
+              - label: 스펙
+                name: specs
+                widget: list
+                required: false
+                summary: "{{fields.label}}: {{fields.value}}"
+                hint: "첫 번째 스펙은 프로젝트 목록 카드에도 보여요"
+                fields:
+                  - { label: "항목 (예: WEIGHT)", name: label, widget: string }
+                  - { label: "값 (예: 142g)", name: value, widget: string }
+              - label: 상세 페이지 소개문
+                name: intro
+                widget: text
+                required: false
+                hint: "아래 상세 항목 중 하나라도 채우면 카드에 '자세히 보기' 링크가 생겨요"
+              - label: Overview
+                name: overview
+                widget: text
+                required: false
+                hint: "빈 줄을 넣으면 문단이 나뉘어요"
+              - label: 설계 과정
+                name: process
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "단계 제목", name: title, widget: string }
+                  - { label: "설명", name: body, widget: text, required: false }
+              - label: 갤러리
+                name: gallery
+                widget: list
+                required: false
+                summary: "{{fields.caption}}"
+                fields:
+                  - { label: "이미지", name: image, widget: image, required: false }
+                  - { label: "캡션 (예: CAD VIEW)", name: caption, widget: string, required: false }
+              - label: Results & Lessons Learned
+                name: results
+                widget: text
+                required: false
+
+  # ---------------- 사진 ----------------
+  - name: photos
+    label: 사진
+    editor:
+      preview: false
+    files:
+      - name: photos
+        label: 사진 목록
+        file: data/photos.json
+        fields:
+          - label: 사진
+            name: photos
+            widget: list
+            label_singular: 사진
+            summary: "{{fields.category}} · {{fields.alt}}"
+            collapsed: true
+            fields:
+              - label: 사진 파일
+                name: image
+                widget: image
+                required: false
+                hint: "비워두면 플레이스홀더로 보여요. 카메라 원본은 용량이 커서, 긴 변 1400px 정도로 줄여서 올리는 걸 추천해요."
+              - label: 설명
+                name: alt
+                widget: string
+                required: false
+                hint: "예: 한강 노을과 보트"
+              - label: 촬영일
+                name: date
+                widget: string
+                required: false
+                hint: "예: 2026.09.14"
+              - label: 카테고리
+                name: category
+                widget: select
+                default: daily
+                options:
+                  - { label: "Street", value: street }
+                  - { label: "Daily", value: daily }
+                  - { label: "Night", value: night }
+              - label: 갤러리 모양
+                name: shape
+                widget: select
+                default: square
+                options:
+                  - { label: "세로 (3:4)", value: tall }
+                  - { label: "가로 (4:3)", value: wide }
+                  - { label: "정사각형", value: square }
+              - label: 홈 화면에 표시
+                name: home
+                widget: boolean
+                default: false
+                required: false
+                hint: "체크된 사진 중 위에서부터 3장이 홈 화면 '최근 촬영한 사진'에 나와요"
+              - label: 초점거리
+                name: focal
+                widget: string
+                required: false
+                hint: "예: 25.6mm"
+              - label: 조리개
+                name: aperture
+                widget: string
+                required: false
+                hint: "예: f/8"
+              - label: 셔터 속도
+                name: shutter
+                widget: string
+                required: false
+                hint: "예: 1/1600s"
+              - label: ISO
+                name: iso
+                widget: string
+                required: false
+                hint: "숫자만 (예: 100)"
+
+  # ---------------- About ----------------
+  - name: about
+    label: About
+    editor:
+      preview: false
+    files:
+      - name: about
+        label: 이력 · 스킬 · 장비
+        file: data/about.json
+        fields:
+          - label: 이력
+            name: timeline
+            widget: list
+            summary: "{{fields.date}} {{fields.title}}"
+            fields:
+              - { label: "기간 (예: 2025.03 —)", name: date, widget: string }
+              - { label: "제목", name: title, widget: string }
+              - { label: "설명", name: body, widget: text, required: false }
+          - label: 스킬
+            name: skills
+            widget: list
+            hint: "쉼표로 구분해서 입력"
+          - label: 장비
+            name: gear
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "이름", name: name, widget: string }
+              - { label: "부가 설명 (예: Primary Body)", name: sub, widget: string, required: false }
+              - label: 아이콘
+                name: icon
+                widget: select
+                default: camera
+                options:
+                  - { label: "카메라", value: camera }
+                  - { label: "렌즈", value: lens }
+                  - { label: "노트북", value: laptop }
+                  - { label: "3D 프린터", value: printer }
+                  - { label: "기어(기타)", value: gear }
