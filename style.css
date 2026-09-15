@@ -547,6 +547,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .photo-card .ph { position: absolute; inset: 0; }
+.photo-card .photo-real { position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
 
 /* --- Viewfinder HUD --- */
 .hud {
@@ -764,10 +765,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .masonry .ph { position: static; }
+.masonry .photo-real { position: static; height: auto; }
 
 .h-tall .ph { aspect-ratio: 3/4; }
 .h-wide .ph { aspect-ratio: 4/3; }
 .h-square .ph { aspect-ratio: 1/1; }
+
+.photo-real {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.h-tall .photo-real { aspect-ratio: 3/4; }
+.h-wide .photo-real { aspect-ratio: 4/3; }
+.h-square .photo-real { aspect-ratio: 1/1; }
 
 /* ============================================================
    About Page
