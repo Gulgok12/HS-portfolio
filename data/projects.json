@@ -1,133 +1,173 @@
 {
   "projects": [
     {
-      "id": "robot-gripper",
-      "title": "소형 로봇 그리퍼 설계",
-      "category": "design",
-      "summary": "3D 프린팅 기반 2축 그리퍼 메커니즘을 설계하고 서보 모터와 연동한 시제품을 제작했습니다.",
-      "tags": ["Fusion 360", "3D Printing", "Arduino"],
+      "thumbTag": "JUSO",
+      "summary": "자동심장충격기 같은 사물주소를 민간지도에도 표시되게 하여 편의성을 제공하고자, 정책아이디어 분야에 참가하였습니다.",
+      "thumbnail": "/HS-portfolio/images/5.-주소정보-활용-대국민-공모전-포스터_page-0001.jpg",
+      "intro": "민간 지도에서 검색되지 않는 약 25.8만 건의 사물주소 문제를 해결하기 위해, 도로명주소처럼 검색 API를 개방하고 일 단위로 데이터를 연계하여 응급 상황 시 골든타임을 확보하고 국민 편의를 높이자는 제안입니다.",
       "featured": true,
-      "thumbnail": "",
-      "icon": "gear",
-      "thumbTag": "CAD PREVIEW",
-      "dimA": "65mm",
-      "dimB": "Ø12mm",
-      "specs": [
-        { "label": "WEIGHT", "value": "142g" },
-        { "label": "MATERIAL", "value": "PLA + TPU" },
-        { "label": "ACTUATOR", "value": "SG90 Servo × 2" },
-        { "label": "DURATION", "value": "3 Weeks" },
-        { "label": "ROLE", "value": "설계 · 제작 · 테스트" }
-      ],
-      "intro": "3D 프린팅 기반 2축 그리퍼 메커니즘을 설계하고, 서보 모터와 연동해 실제로 작동하는 시제품까지 제작한 프로젝트입니다.",
-      "overview": "이 프로젝트는 소형 사물을 안정적으로 집을 수 있는 2축 로봇 그리퍼를 설계하고 제작하는 것을 목표로 했습니다. 3D 프린팅으로 빠르게 반복 제작이 가능한 구조를 채택했고, 서보 모터 2개로 집게의 각도와 힘을 독립적으로 제어할 수 있도록 설계했습니다.\n\n설계 과정에서 가장 중점을 둔 부분은 그립력과 내구성이었습니다. 초기 프로토타입은 반복 사용 시 조인트 부분이 쉽게 마모되는 문제가 있었고, 이를 해결하기 위해 TPU 소재로 부싱을 별도 제작해 조립했습니다.",
       "process": [
-        { "title": "컨셉 스케치 & 요구사항 정의", "body": "집을 수 있는 물체의 크기 범위, 필요한 그립력, 구동 방식을 먼저 정의했습니다." },
-        { "title": "CAD 모델링", "body": "Fusion 360에서 링크 구조를 설계하고, 모터 토크 대비 그립력을 계산해 기구비를 조정했습니다." },
-        { "title": "프로토타입 제작 & 테스트", "body": "FDM 3D 프린터로 1차 시제품을 출력하고, 반복 동작 테스트를 통해 마모 구간을 파악했습니다." },
-        { "title": "개선 & 최종 조립", "body": "TPU 부싱 적용, 나사 체결 방식 변경 등을 반영해 최종 버전을 완성했습니다." }
+        {
+          "title": "주제 선정 & 구체화",
+          "body": "사물주소를 다루자는 대략적인 주제를 정하고, 주제에 대한 배경지식을 더 쌓아갔습니다."
+        },
+        {
+          "title": "실현가능성 판단 및 구체화",
+          "body": "지금까지의 주제가 실현가능한지를 분석하고, 문제상황에 대한 해결방안을 내기 시작합니다."
+        },
+        {
+          "title": "제안서 작성 및 제출",
+          "body": "구체화한 아이디어를 통해서 제안서를 작성하고 기한 안에 제출합니다."
+        }
       ],
-      "gallery": [
-        { "image": "", "caption": "CAD VIEW" },
-        { "image": "", "caption": "PRINTING" },
-        { "image": "", "caption": "TESTING" }
+      "gallery": [],
+      "results": "공모전이라는 시스템을 처음 접하고 참여해보았다. 이번 공모전을 통해서 공모전의 형식과 과정 등의 것들을 대략적으로 배울 수 있었다.",
+      "specs": [],
+      "title": "주소정보공모전 참여",
+      "tags": [
+        "juso.go.kr"
       ],
-      "results": "최종적으로 최대 300g 무게의 물체를 안정적으로 집어 옮길 수 있는 그리퍼를 완성했습니다. 이 프로젝트를 통해 CAD 설계 단계에서의 계산이 실제 동작과 어떻게 차이가 나는지, 그리고 반복 테스트를 통한 설계 개선의 중요성을 배울 수 있었습니다."
+      "icon": "gear",
+      "dimA": "65mm",
+      "overview": "국가는 약 25.8만 건의 사물주소를 부여했으나, 전용 검색 API 부재와 월 단위 갱신으로 인한 시차 탓에 민간 지도에서는 전혀 검색되지 않거나 오안내되고 있습니다. 이에 따라 기존 도로명주소 체계를 준용해 '사물주소 검색 API'를 개방하고, 변동자료 갱신 주기를 일 단위로 단축하여 데이터 전달 통로를 마련하고자 합니다. 이 방안은 안전디딤돌 등 공공 서비스에 우선 적용해 안정성을 검증한 뒤, 민관 협의체를 통해 민간 지도로 단계적 확산을 추진합니다. 이를 통해 AED 등 응급·안전시설의 골든타임을 확보하는 것은 물론, 전동휠체어 충전기를 비롯한 23종 생활 인프라의 접근성을 크게 높일 수 있습니다.",
+      "dimB": "Ø12mm",
+      "id": "juso-",
+      "category": "analysis"
     },
     {
-      "id": "drone-frame",
-      "title": "모듈형 드론 프레임",
-      "category": "prototype",
+      "thumbTag": "CAD PREVIEW",
       "summary": "충격 흡수를 고려한 경량 드론 프레임을 설계하고 강도 테스트를 진행했습니다.",
-      "tags": ["SolidWorks", "FEA", "Carbon Fiber"],
+      "thumbnail": "",
+      "intro": "",
       "featured": true,
-      "thumbnail": "",
+      "process": [],
+      "gallery": [],
+      "results": "",
+      "specs": [
+        {
+          "label": "WEIGHT",
+          "value": "68g"
+        }
+      ],
+      "title": "모듈형 드론 프레임",
+      "tags": [
+        "SolidWorks",
+        "FEA",
+        "Carbon Fiber"
+      ],
       "icon": "frame",
-      "thumbTag": "CAD PREVIEW",
       "dimA": "120mm",
+      "overview": "",
       "dimB": "t=3mm",
-      "specs": [{ "label": "WEIGHT", "value": "68g" }],
-      "intro": "",
-      "overview": "",
-      "process": [],
-      "gallery": [],
-      "results": ""
+      "id": "drone-frame",
+      "category": "prototype"
     },
     {
-      "id": "bracket-fea",
-      "title": "브래킷 응력 해석",
-      "category": "analysis",
-      "summary": "알루미늄 브래킷의 하중 조건별 유한요소해석 및 형상 최적화.",
-      "tags": ["ANSYS", "FEA"],
-      "featured": false,
-      "thumbnail": "",
-      "icon": "chart",
       "thumbTag": "FEA RESULT",
+      "summary": "알루미늄 브래킷의 하중 조건별 유한요소해석 및 형상 최적화.",
+      "thumbnail": "",
+      "intro": "",
+      "featured": false,
+      "process": [],
+      "gallery": [],
+      "results": "",
+      "specs": [
+        {
+          "label": "MATERIAL",
+          "value": "AL 6061"
+        }
+      ],
+      "title": "브래킷 응력 해석",
+      "tags": [
+        "ANSYS",
+        "FEA"
+      ],
+      "icon": "chart",
       "dimA": "σ 210MPa",
+      "overview": "",
       "dimB": "FOS 2.4",
-      "specs": [{ "label": "MATERIAL", "value": "AL 6061" }],
-      "intro": "",
-      "overview": "",
-      "process": [],
-      "gallery": [],
-      "results": ""
+      "id": "bracket-fea",
+      "category": "analysis"
     },
     {
-      "id": "gear-reducer",
-      "title": "기어 감속 장치 설계",
-      "category": "design",
-      "summary": "2단 평기어 감속 시스템 설계 및 토크 전달 효율 계산.",
-      "tags": ["Fusion 360", "GD&T"],
-      "featured": false,
-      "thumbnail": "",
-      "icon": "clock",
       "thumbTag": "CAD PREVIEW",
+      "summary": "2단 평기어 감속 시스템 설계 및 토크 전달 효율 계산.",
+      "thumbnail": "",
+      "intro": "",
+      "featured": false,
+      "process": [],
+      "gallery": [],
+      "results": "",
+      "specs": [
+        {
+          "label": "RATIO",
+          "value": "1:16"
+        }
+      ],
+      "title": "기어 감속 장치 설계",
+      "tags": [
+        "Fusion 360",
+        "GD&T"
+      ],
+      "icon": "clock",
       "dimA": "88mm",
+      "overview": "",
       "dimB": "M4 x 6",
-      "specs": [{ "label": "RATIO", "value": "1:16" }],
-      "intro": "",
-      "overview": "",
-      "process": [],
-      "gallery": [],
-      "results": ""
+      "id": "gear-reducer",
+      "category": "design"
     },
     {
-      "id": "auto-planter",
-      "title": "자동 급수 화분 시스템",
-      "category": "prototype",
-      "summary": "토양 습도 센서 기반 아두이노 자동 급수 장치 설계 및 제작.",
-      "tags": ["Arduino", "3D Printing"],
-      "featured": false,
-      "thumbnail": "",
-      "icon": "house",
       "thumbTag": "PROTOTYPE",
-      "dimA": "200mm",
-      "dimB": "1.2kg",
-      "specs": [{ "label": "SENSOR", "value": "Capacitive" }],
+      "summary": "토양 습도 센서 기반 아두이노 자동 급수 장치 설계 및 제작.",
+      "thumbnail": "",
       "intro": "",
-      "overview": "",
+      "featured": false,
       "process": [],
       "gallery": [],
-      "results": ""
+      "results": "",
+      "specs": [
+        {
+          "label": "SENSOR",
+          "value": "Capacitive"
+        }
+      ],
+      "title": "자동 급수 화분 시스템",
+      "tags": [
+        "Arduino",
+        "3D Printing"
+      ],
+      "icon": "house",
+      "dimA": "200mm",
+      "overview": "",
+      "dimB": "1.2kg",
+      "id": "auto-planter",
+      "category": "prototype"
     },
     {
-      "id": "next-project",
-      "title": "다음 프로젝트",
-      "category": "ongoing",
-      "summary": "현재 구상 중인 프로젝트입니다 — 계획도 포트폴리오가 됩니다.",
-      "tags": ["Planning"],
-      "featured": false,
-      "thumbnail": "",
-      "icon": "plus",
       "thumbTag": "IN PROGRESS",
-      "dimA": "TBD",
-      "dimB": "v0.1",
-      "specs": [{ "label": "STATUS", "value": "Concept" }],
+      "summary": "현재 구상 중인 프로젝트입니다 — 계획도 포트폴리오가 됩니다.",
+      "thumbnail": "",
       "intro": "",
-      "overview": "",
+      "featured": false,
       "process": [],
       "gallery": [],
-      "results": ""
+      "results": "",
+      "specs": [
+        {
+          "label": "STATUS",
+          "value": "Concept"
+        }
+      ],
+      "title": "다음 프로젝트",
+      "tags": [
+        "Planning"
+      ],
+      "icon": "plus",
+      "dimA": "TBD",
+      "overview": "",
+      "dimB": "v0.1",
+      "id": "next-project",
+      "category": "ongoing"
     }
   ]
 }
